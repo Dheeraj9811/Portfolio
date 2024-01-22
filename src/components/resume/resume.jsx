@@ -8,6 +8,7 @@ const resume = () => {
         <Title title="My" subTitle="Resume "  />
         <Education />
     </section>
+    
   );
 };
 

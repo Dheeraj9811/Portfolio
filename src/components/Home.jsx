@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState ,useEffect } from 'react';
 import Left from './home/left'
 import Right from './home/right'
 // import {About} from './about/about'
@@ -10,6 +10,12 @@ import { AiOutlineSolution } from "react-icons/ai";
 
 
 const Home = () => {
+  const [activeComponent, setActiveComponent] = useState('about');
+  
+  const handleNavItemClicked = (component) => {
+    setActiveComponent(component);
+  };
+
   return (
     <div className=" w-[75%] h-[80%] bg-transparent text-white rounded-lg z-50 flex ">
       {/* nav bar */}
@@ -26,9 +32,9 @@ const Home = () => {
         </div>
         {/* other Icons */}
         <div className="  w-full h-80 bg-bodyColor rounded-3xl py-5 flex flex-col justify-between items-center ">
-          <span className=" flex hover:text-designColor duration-300 cursor-pointer relative group"><BsFillPersonFill  className=' text-2xl rounded-lg '/> <span className=' w-auto  absolute text-black font-medium text-xs uppercase bg-designColor  p-0.5 py-1 rounded-lg left-0 translate-x-8 group-hover:translate-x-12 transition-all duration-300 z-20 opacity-0 group-hover:opacity-100 ' >About</span> </span>
-          <span className=" flex hover:text-designColor duration-300 cursor-pointer relative group"><AiOutlineSolution   className=' text-2xl rounded-lg '/> <span className=' w-auto   absolute text-black font-medium text-xs uppercase bg-designColor  p-0.5 py-1 rounded-lg left-0 translate-x-8 group-hover:translate-x-12 transition-all duration-300 z-20 opacity-0 group-hover:opacity-100 ' >CV</span> </span>
-          <span className=" flex hover:text-designColor duration-300 cursor-pointer relative group"><SiMicrosoftacademic  className=' text-2xl rounded-lg '/> <span className='   w-auto absolute text-black font-medium text-xs uppercase bg-designColor  p-0.5 py-1 rounded-lg left-0 translate-x-8 group-hover:translate-x-12 transition-all duration-300 z-20 opacity-0 group-hover:opacity-100 ' >Project</span> </span>
+          <span className=" flex hover:text-designColor duration-300 cursor-pointer relative group" onClick={() => handleNavItemClicked('about')} ><BsFillPersonFill  className=' text-2xl rounded-lg '/> <span className=' w-auto  absolute text-black font-medium text-xs uppercase bg-designColor  p-0.5 py-1 rounded-lg left-0 translate-x-8 group-hover:translate-x-12 transition-all duration-300 z-20 opacity-0 group-hover:opacity-100 ' >About</span> </span>
+          <span className=" flex hover:text-designColor duration-300 cursor-pointer relative group"  onClick={() => handleNavItemClicked('resume')} ><AiOutlineSolution   className=' text-2xl rounded-lg '/> <span className=' w-auto   absolute text-black font-medium text-xs uppercase bg-designColor  p-0.5 py-1 rounded-lg left-0 translate-x-8 group-hover:translate-x-12 transition-all duration-300 z-20 opacity-0 group-hover:opacity-100 ' >CV</span> </span>
+          <span className=" flex hover:text-designColor duration-300 cursor-pointer relative group" onClick={() => handleNavItemClicked('project')} ><SiMicrosoftacademic  className=' text-2xl rounded-lg '/> <span className='   w-auto absolute text-black font-medium text-xs uppercase bg-designColor  p-0.5 py-1 rounded-lg left-0 translate-x-8 group-hover:translate-x-12 transition-all duration-300 z-20 opacity-0 group-hover:opacity-100 ' >Project</span> </span>
           
         </div>
         
@@ -37,7 +43,7 @@ const Home = () => {
         {/* left part */}
         <Left></Left>
         {/* right part */}
-        <Right></Right>
+        <Right activeComponent={activeComponent} />
           
       </div>
         
