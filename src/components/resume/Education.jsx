@@ -4,6 +4,7 @@ import { MdSchool } from "react-icons/md";
 
 
 
+
 const Education = () => {
   return (
     <div id='main' className="  w-[95%]  mx-2 pb-6 px-6 flex flex-col gap-6   ">
@@ -14,10 +15,10 @@ const Education = () => {
       </div>
       {/* Experince details*/}
       <div className='flex flex-col gap-3 pb-6 border-b-[1px]  border-zinc-800 group hover:text-designColor transition-all duration-500 ease-in-out  '>
-        <h6 className=' w-[30%] border border-gray-500 px-4 py-[1px]  text-gray-500 text-sm  '>2023 Jul-2023 Dec</h6>
-        <h6 className='uppercase text-lg flex flex-col gap-2' >AI product development and Research
-          <h7 className=" text-gray-500 text-sm  ">Part-time at ASADEL TECHNOLOGIES</h7>
-        </h6>
+        <h4 className=' w-[30%] border border-gray-500 px-4 py-[1px]  text-gray-500 text-sm  '>2023 Jul-2023 Dec</h4>
+        <h4 className='uppercase text-lg flex flex-col gap-2' >AI product development and Research
+          <h5 className=" text-gray-500 text-sm  ">Part-time at ASADEL TECHNOLOGIES</h5>
+        </h4>
         
         <span className='  hidden transition-all duration-500  group-hover:shadow-2xl  group-hover:ease-in-out group-hover:duration-500  group-hover:block' >
         <ul className='list-disc text-gray-500 text-sm text-pretty  '>
@@ -32,10 +33,10 @@ const Education = () => {
       </div>
 
       <div className='flex flex-col gap-3 pb-6 border-b-[1px]  border-zinc-800 group hover:text-designColor transition-all duration-300 ease-in-out   '>
-        <h6 className=' w-[32%] border border-gray-500 px-4 py-[1px]  text-gray-500 text-sm '>2023 May-2023 Jul</h6>
-        <h6 className='uppercase text-lg flex flex-col gap-2' >Summer Intern
-          <h7 className=" text-gray-500 text-sm  "> ASADEL TECHNOLOGIES</h7>
-        </h6>
+        <h4 className=' w-[32%] border border-gray-500 px-4 py-[1px]  text-gray-500 text-sm '>2023 May-2023 Jul</h4>
+        <h4 className='uppercase text-lg flex flex-col gap-2' >Summer Intern
+          <h5 className=" text-gray-500 text-sm  "> ASADEL TECHNOLOGIES</h5>
+        </h4>
         
         <span className='hidden transition-all duration-500  group-hover:shadow-2xl   group-hover:ease-in-out group-hover:duration-500  group-hover:block'>
         <ul className='list-disc text-gray-500 text-sm text-pretty '>
@@ -48,11 +49,11 @@ const Education = () => {
       </div>
       
       <div className='flex flex-col gap-3 pb-6 border-b-[1px]  border-zinc-800 group hover:text-designColor transition-all duration-300 ease-in-out   '>
-        <h6 className=' w-[32%] border border-gray-500 px-4 py-[1px]  text-gray-500 text-sm '>2023 Jan-2023 Dec</h6>
-        <h6 className='uppercase text-lg flex flex-col gap-2' >Application of AI For Arts
-          <a href="https://cosylab.iiitd.edu.in/" rel="noreferrer" target="_blank" > <h7 className=" text-gray-500 text-sm  "> COMPLEX SYSTEMS LAB</h7></a>
+        <h4 className=' w-[32%] border border-gray-500 px-4 py-[1px]  text-gray-500 text-sm '>2023 Jan-2023 Dec</h4>
+        <h4 className='uppercase text-lg flex flex-col gap-2' >Application of AI For Arts
+          <a href="https://cosylab.iiitd.edu.in/" rel="noreferrer" target="_blank" > <h5 className=" text-gray-500 text-sm  "> COMPLEX SYSTEMS LAB</h5></a>
           
-        </h6>
+        </h4>
         
         <span className='hidden transition-all duration-500  group-hover:shadow-2xl   group-hover:ease-in-out group-hover:duration-500  group-hover:block'>
         <ul className='list-disc text-gray-500 text-sm text-pretty '>
@@ -69,20 +70,20 @@ const Education = () => {
       </div>
       {/* education details */}
       <div className='flex  flex-col gap-3 pb-6 border-b-[1px]  border-zinc-800 group hover:text-designColor transition-all duration-300 ease-in-out   '>
-        <h6 className=' w-[32%] border border-designColor px-4 py-[1px]  text-designColor text-sm '>2020 -2024</h6>
-        <h6 className='uppercase text-lg flex flex-col gap-2' >IIIT-D
-          <a href="https://iiitd.ac.in/" rel="noreferrer" target="_blank"> <h7 className=" text-gray-500 text-sm  "> B.Tech, ECE</h7></a>
+        <h4 className=' w-[32%] border border-designColor px-4 py-[1px]  text-designColor text-sm '>2020 -2024</h4>
+        <h4 className='uppercase text-lg flex flex-col gap-2' >IIIT-D
+          <a href="https://iiitd.ac.in/" rel="noreferrer" target="_blank"> <h5 className=" text-gray-500 text-sm  "> B.Tech, ECE</h5></a>
           
-        </h6>
+        </h4>
         
       </div>
 
       <div className='flex flex-col gap-3 pb-6 border-b-[1px]  border-zinc-800 group hover:text-designColor transition-all duration-300 ease-in-out   '>
-        <h6 className=' w-[30%] border border-gray-500 px-4 py-[1px]  text-gray-500 text-sm  '>2018 -2019</h6>
-        <h6 className='uppercase text-lg flex flex-col gap-2' >KIIT WORLD SCHOOL, Delhi
-          <a href="https://www.kiitworld.in/" rel="noreferrer" target="_blank"  > <h7 className=" text-gray-500 text-sm  "> CBSE Standard (12th Grade), PCM + CS</h7></a>
+        <h4 className=' w-[30%] border border-gray-500 px-4 py-[1px]  text-gray-500 text-sm  '>2018 -2019</h4>
+        <h4 className='uppercase text-lg flex flex-col gap-2' >KIIT WORLD SCHOOL, Delhi
+          <a href="https://www.kiitworld.in/" rel="noreferrer" target="_blank"  > <h5 className=" text-gray-500 text-sm  "> CBSE Standard (12th Grade), PCM + CS</h5></a>
           
-        </h6>
+        </h4>
         
       </div>
 

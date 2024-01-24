@@ -1,6 +1,7 @@
 import React, { useState ,useEffect } from 'react';
 import Left from './home/left'
 import Right from './home/right'
+import { Routes, Route, Link, useNavigate } from 'react-router-dom';
 // import {About} from './about/about'
 import { BsFillPersonFill } from "react-icons/bs";
 import { SiMicrosoftacademic } from "react-icons/si";
@@ -8,14 +9,32 @@ import { AiOutlineSolution } from "react-icons/ai";
 
 
 
-
+// hook useState is used to change the active component in the right part of the page here we have 3 components about , resume and project
+// useState take retur 2 parameter one initial value and the second is a function to change the value of the first parameter
+//  we have given varable string name  activeComponent to the first parameter and setActiveComponent to the second parameter 
+//  useeffect is used to change the active component when the path changes [] is only when first time render , [value] when value changes , [value1,value2] when value1 or value2 changes , no value when any thing changes
 const Home = () => {
   const [activeComponent, setActiveComponent] = useState('about');
+  const navigate = useNavigate();
   
-  const handleNavItemClicked = (component) => {
-    setActiveComponent(component);
-  };
 
+  // Function to handle navigation item clicks
+  const handleNavItemClicked = (path,newlocation) => {
+    // Use the navigate function to programmatically navigate to the specified path
+    navigate(path);
+    setActiveComponent(newlocation);
+    
+  };
+  //  using useEffect hook to change the active component when the path changes
+  useEffect(() => {
+    // when activeComponent changes, the useEffect hook will be called to make scroll to the top of the page
+    document.getElementById('rightside').scrollTo(0, 0);
+  }, [activeComponent]);
+
+  
+  // const handleNavItemClicked1 = (newlocation) => {
+  //   setActiveComponent(newlocation);
+  // };
   return (
     <div className=" w-[75%] h-[80%] bg-transparent text-white rounded-lg z-50 flex ">
       {/* nav bar */}
@@ -32,9 +51,9 @@ const Home = () => {
         </div>
         {/* other Icons */}
         <div className="  w-full h-80 bg-bodyColor rounded-3xl py-5 flex flex-col justify-between items-center ">
-          <span className=" flex hover:text-designColor duration-300 cursor-pointer relative group" onClick={() => handleNavItemClicked('about')} ><BsFillPersonFill  className=' text-2xl rounded-lg '/> <span className=' w-auto  absolute text-black font-medium text-xs uppercase bg-designColor  p-0.5 py-1 rounded-lg left-0 translate-x-8 group-hover:translate-x-12 transition-all duration-300 z-20 opacity-0 group-hover:opacity-100 ' >About</span> </span>
-          <span className=" flex hover:text-designColor duration-300 cursor-pointer relative group"  onClick={() => handleNavItemClicked('resume')} ><AiOutlineSolution   className=' text-2xl rounded-lg '/> <span className=' w-auto   absolute text-black font-medium text-xs uppercase bg-designColor  p-0.5 py-1 rounded-lg left-0 translate-x-8 group-hover:translate-x-12 transition-all duration-300 z-20 opacity-0 group-hover:opacity-100 ' >CV</span> </span>
-          <span className=" flex hover:text-designColor duration-300 cursor-pointer relative group" onClick={() => handleNavItemClicked('project')} ><SiMicrosoftacademic  className=' text-2xl rounded-lg '/> <span className='   w-auto absolute text-black font-medium text-xs uppercase bg-designColor  p-0.5 py-1 rounded-lg left-0 translate-x-8 group-hover:translate-x-12 transition-all duration-300 z-20 opacity-0 group-hover:opacity-100 ' >Project</span> </span>
+          <span className=" flex hover:text-designColor duration-300 cursor-pointer relative group" onClick={() => handleNavItemClicked('/' , 'about')} ><BsFillPersonFill  className=' text-2xl rounded-lg '/> <span className=' w-auto  absolute text-black font-medium text-xs uppercase bg-designColor  p-0.5 py-1 rounded-lg left-0 translate-x-8 group-hover:translate-x-12 transition-all duration-300 z-20 opacity-0 group-hover:opacity-100 ' >About</span> </span>
+          <span className=" flex hover:text-designColor duration-300 cursor-pointer relative group"  onClick={() => handleNavItemClicked('/resume' , 'resume')} ><AiOutlineSolution   className=' text-2xl rounded-lg '/> <span className=' w-auto   absolute text-black font-medium text-xs uppercase bg-designColor  p-0.5 py-1 rounded-lg left-0 translate-x-8 group-hover:translate-x-12 transition-all duration-300 z-20 opacity-0 group-hover:opacity-100 ' >CV</span> </span>
+          <span className=" flex hover:text-designColor duration-300 cursor-pointer relative group" onClick={() => handleNavItemClicked('/project','project')} ><SiMicrosoftacademic  className=' text-2xl rounded-lg '/> <span className='   w-auto absolute text-black font-medium text-xs uppercase bg-designColor  p-0.5 py-1 rounded-lg left-0 translate-x-8 group-hover:translate-x-12 transition-all duration-300 z-20 opacity-0 group-hover:opacity-100 ' >Project</span> </span>
           
         </div>
         
