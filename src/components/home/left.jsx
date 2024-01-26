@@ -15,7 +15,7 @@ import { MdContacts } from "react-icons/md";
 const texts = ["I am a developer", "Passionate about coding", "Building awesome websites"];
 const left = () => {
   return (
-    <div className=" border md:w-5/12 md:h-full ">
+    <div className="  md:w-5/12 md:h-full ">
         <div className=" w-full h-3/5 place-items-center bg-bodyColor overflow-hidden rounded-3xl">
             <img src={ProfilePic} alt="profile pic" className="w-full h-full scale-125   rounded-3xl shadow-lg border-2 border-gray-700"></img>
         </div>

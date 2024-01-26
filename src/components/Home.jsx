@@ -36,7 +36,7 @@ const Home = () => {
   //   setActiveComponent(newlocation);
   // };
   return (
-    <div className=" border w-[75%] h-[80%] bg-transparent text-white rounded-lg z-50 md:flex flex-row relative ">
+    <div className="  w-[75%] h-[80%] bg-transparent text-white rounded-lg z-50 md:flex flex-row relative ">
       {/* nav bar */}
       <div className=" navbar  md:rotate-0 md:w-16 md:h-96 bg-transparent rounded-lg md:flex md:flex-col gap-3 px-1 -ml-2 mr-1 ">
         {/* home Icons */}
