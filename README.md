@@ -2,6 +2,12 @@
 
 This is my personal portfolio website, built with React and Vite!
 
+To run the website locally, clone the repository and run the following commands:
+
+'''npm init
+then
+ npm run dev'''
+
 ## Features
 
 - **User-Friendly Content Management:** Effortlessly update your content with a highly user-friendly approach. Utilize separate data files, such as `skilldata.jsx`, for easy content management without the need to dive into the core codebase.
