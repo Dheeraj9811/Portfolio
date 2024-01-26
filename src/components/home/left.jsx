@@ -54,7 +54,7 @@ const left = () => {
             
             <div className="   flex  justify-center w-full  h-14 border-t-[1px] border-zinc-800 ">
                 <a href="https://drive.google.com/drive/u/1/folders/1H2GZ5-eh-z_d22BVcLNcKa7wHLjkpYQv" rel="noreferrer" target="_blank" className=" w-1/2 flex flex-row justify-center justify-items-center hover:text-designColor duration-300 border-r-[1px] border-zinc-800 " ><button className="   "> <div className=" flex h-full pt-3 " >Download CV<BiSolidFilePdf  className=" mt-1 ml-1"></BiSolidFilePdf ></div>  </button></a>
-                <a href="" rel="noreferrer" target="_blank"  className="w-1/2 flex flex-row justify-center justify-items-center hover:text-designColor duration-300 "><button className="    "> <div className=" flex h-full pt-3 " >CONTACT ME<MdContacts className=" mt-1 ml-1 " /> </div>  </button></a>
+                <a href="mailto:dheerajdeshwal9811@gmail.com" rel="noreferrer" target="_blank"  className="w-1/2 flex flex-row justify-center justify-items-center hover:text-designColor duration-300 "><button className="    "> <div className=" flex h-full pt-3 " >CONTACT ME<MdContacts className=" mt-1 ml-1 " /> </div>  </button></a>
                 
                 
 
