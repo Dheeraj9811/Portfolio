@@ -4,9 +4,18 @@ This is my personal portfolio website, built with React and Vite!
 
 To run the website locally, clone the repository and run the following commands:
 
-'''npm init
-then
- npm run dev'''
+## Getting Started
+
+To run the project locally, follow these steps:
+
+1. Clone this repository:
+
+   ```bash
+   git clone https://github.com/your-username/your-portfolio.git
+   cd your-portfolio
+   npm install
+   npm run dev
+    ```
 
 ## Features
 
