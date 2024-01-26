@@ -36,11 +36,11 @@ const Home = () => {
   //   setActiveComponent(newlocation);
   // };
   return (
-    <div className=" w-[75%] h-[80%] bg-transparent text-white rounded-lg z-50 flex ">
+    <div className=" border w-[75%] h-[80%] bg-transparent text-white rounded-lg z-50 md:flex flex-row relative ">
       {/* nav bar */}
-      <div className="navbar  w-16 h-96 bg-transparent rounded-lg flex flex-col gap-3 px-1 -ml-2 mr-1 ">
+      <div className=" navbar  md:rotate-0 md:w-16 md:h-96 bg-transparent rounded-lg md:flex md:flex-col gap-3 px-1 -ml-2 mr-1 ">
         {/* home Icons */}
-        <div className="  w-full h-20 bg-bodyColor rounded-3xl overflow-hidden flex justify-center items-center cursor-pointer " >  
+        <div className=" rotate-90 hidden md:visible md:rotate-0 w-full h-20 bg-bodyColor rounded-3xl overflow-hidden flex justify-center items-center cursor-pointer " >  
           
           <div className="   flex flex-col gap-1.5 justify-center items-center group overflow-hidden ">
             <span className=" w-8 h-[2px] bg-titleColor inline-block -translate-x-2 group-hover:translate-x-0 transition-transform duration-300 group-hover:bg-designColor "></span>
@@ -58,7 +58,7 @@ const Home = () => {
         </div>
         
       </div>
-      <div className='  w-5/6 h-full  bg-transparent flex items-center'>  {/* main body wich contains left and right parts */}
+      <div className=' md:w-11/12 md:h-full  bg-transparent md:flex items-center'>  {/* main body wich contains left and right parts */}
         {/* left part */}
         <Left></Left>
         {/* right part */}

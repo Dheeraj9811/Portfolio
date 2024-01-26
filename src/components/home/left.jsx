@@ -15,13 +15,13 @@ import { MdContacts } from "react-icons/md";
 const texts = ["I am a developer", "Passionate about coding", "Building awesome websites"];
 const left = () => {
   return (
-    <div className=" w-5/12 h-full ">
+    <div className=" border md:w-5/12 md:h-full ">
         <div className=" w-full h-3/5 place-items-center bg-bodyColor overflow-hidden rounded-3xl">
             <img src={ProfilePic} alt="profile pic" className="w-full h-full scale-125   rounded-3xl shadow-lg border-2 border-gray-700"></img>
         </div>
-        <div className=" overflow-hidden relative w-full h-2/5 bg-bodyColor rounded-3xl">
+        <div className=" overflow-auto relative w-full h-2/5 bg-bodyColor rounded-3xl">
             {/* contians intro */}
-            <div className="    w-full h-4/5 flex flex-col items-center gap-2 py-6 ">
+            <div className="    w-full h-4/5 flex flex-col items-center gap-2 py-6 overflow-auto ">
                 <div className=" items-start ">
                     <h1 className=" text-2xl  font-semibold  ">Hi there, I am Dheeraj 👋</h1>
                     <div className="py-4 text-base text-wrap text-designColor  ">
@@ -55,9 +55,6 @@ const left = () => {
             <div className="   flex  justify-center w-full  h-14 border-t-[1px] border-zinc-800 ">
                 <a href="https://drive.google.com/drive/u/1/folders/1H2GZ5-eh-z_d22BVcLNcKa7wHLjkpYQv" rel="noreferrer" target="_blank" className=" w-1/2 flex flex-row justify-center justify-items-center hover:text-designColor duration-300 border-r-[1px] border-zinc-800 " ><button className="   "> <div className=" flex h-full pt-3 " >Download CV<BiSolidFilePdf  className=" mt-1 ml-1"></BiSolidFilePdf ></div>  </button></a>
                 <a href="mailto:dheerajdeshwal9811@gmail.com" rel="noreferrer" target="_blank"  className="w-1/2 flex flex-row justify-center justify-items-center hover:text-designColor duration-300 "><button className="    "> <div className=" flex h-full pt-3 " >CONTACT ME<MdContacts className=" mt-1 ml-1 " /> </div>  </button></a>
-                
-                
-
                 
             </div>
         </div>

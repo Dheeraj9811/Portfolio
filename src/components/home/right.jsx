@@ -8,7 +8,7 @@ import Project from '../project/project';
 
 const right = ({activeComponent }) => {
   return (
-    <div className=" w-8/12 h-[95%] bg-bodyColor overflow-y-auto " id="rightside">
+    <div className=" md:w-8/12 md:h-[95%] bg-bodyColor overflow-y-auto " id="rightside">
       <Routes>
         {/* <Route path='/resume' element={<Resume/>}></Route> */}
         <Route path='/' element={<motion.div initial={{ opacity:0 }} animate={{ opacity:1 }} transition={{duration:0.5}} ><About/></motion.div>  }>

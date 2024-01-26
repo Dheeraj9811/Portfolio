@@ -13,14 +13,14 @@ const ProjectCard = ({title ="project", image = projectbg2, link="NA"} ) => {
     
     return(
         <a href={link} target="_blank" rel="noopener noreferrer" className="block">
-      <div className="py-6 flex flex-col gap-2 items-center justify-center border-b-[1px] border-b-zinc-800 group">
+      <div className="py-6 md:flex md:flex-col gap-2 items-center justify-center border-b-[1px] border-b-zinc-800 group">
         <div className="w-full h-full mb-2  relative cursor-pointer">
           <img
             className="w-full h-full object-cover scale-100 group-hover:scale-110 duration-300 cursor-pointer"
             src={image}
             alt="blogImgOne"
           />
-            <div className="absolute   bg-black bg-opacity-50 transition-all duration-300 ease-in-out opacity-0 group-hover:opacity-100 cursor-pointer overflow-scroll "></div>
+            <div className="absolute   bg-black bg-opacity-50 transition-all duration-300 ease-in-out opacity-0 group-hover:opacity-100 cursor-pointer overflow-auto "></div>
           <div className="  absolute  border inset-5 flex flex-col items-center justify-center">
             <span className="text-lg  p-10 text-teal-950 font-semibold overflow-auto ">
               {title}
@@ -43,7 +43,7 @@ const project = () => {
     return (
       <div>
         <Title title="My" subTitle="Project" />
-        <div className=' w-full   grid grid-cols-2 gap-10 '>
+        <div className=' w-full   md:grid grid-cols-2 gap-10 '>
         {ProjectData.map((item) => {
               return (
                 <div className='   px-6 '>

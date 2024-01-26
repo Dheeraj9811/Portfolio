@@ -5,7 +5,7 @@ import Services from './services'
 
 const about = () => {
   return (
-   <section id="about" className="  w-full">
+   <section id="about" className="  md:w-full">
         <Title title="About" subTitle="Me" />
         <AboutMe />
         <Title title="My" subTitle="Services" />

@@ -15,7 +15,7 @@ const skills = () => {
              
             {SkillData.map((item) => {
             return (
-                <div className=" flex items-center gap-1 " key={item.id}>
+                <div className=" md:flex items-center gap-1 " key={item.id}>
                     <div className=" w-12 h-12 flex items-center justify-center text-designColor ">
                         {item.icon}
                     </div>
