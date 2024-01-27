@@ -5,12 +5,12 @@ import projectbg2 from '../../assets/project-bg-2.jpg'
 import projectbg3 from '../../assets/project-bg-3.jpg'
 import { PropTypes } from 'prop-types';
 import ProjectData from './projectdata'; 
+import { motion } from "framer-motion"
+
 
 
 const ProjectCard = ({title ="project", image = projectbg2, link="NA"} ) => {
-    //  we 
-    console.log({title, image, link});
-    
+    //  we can also use props.title, props.image, props.link
     return(
         <a href={link} target="_blank" rel="noopener noreferrer" className="block">
       <div className="py-6 md:flex md:flex-col gap-2 items-center justify-center border-b-[1px] border-b-zinc-800 group">
@@ -41,14 +41,14 @@ ProjectCard.propTypes ={
 
 const project = () => {    
     return (
+      (<motion.div initial={{ opacity:0 }} animate={{ opacity:1 }} transition={{duration:0.5}} >
       <div>
         <Title title="My" subTitle="Project" />
         <div className=' w-full   md:grid grid-cols-2 gap-10 '>
         {ProjectData.map((item) => {
               return (
-                <div className='   px-6 '>
+                <div className='   px-6 'key={item.id}>
                 <ProjectCard
-                  key={item.id}
                   title={item.title}
                   image={projectbg2}
                   link={item.link}
@@ -59,7 +59,7 @@ const project = () => {
             
         </div>
         
-      </div>
+      </div></motion.div> )
     );
   };
 

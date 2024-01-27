@@ -36,11 +36,11 @@ const Home = () => {
   //   setActiveComponent(newlocation);
   // };
   return (
-    <div className="  w-[75%] h-[80%] bg-transparent text-white rounded-lg z-50 md:flex flex-row relative ">
+    <div className="  w-[75%] h-[80%] bg-transparent text-white rounded-lg z-50 md:flex md:flex-row  ">
       {/* nav bar */}
       <div className=" navbar  md:rotate-0 md:w-16 md:h-96 bg-transparent rounded-lg md:flex md:flex-col gap-3 px-1 -ml-2 mr-1 ">
         {/* home Icons */}
-        <div className=" rotate-90 hidden md:visible md:rotate-0 w-full h-20 bg-bodyColor rounded-3xl overflow-hidden flex justify-center items-center cursor-pointer " >  
+        <div className="  hidden md:visible md:rotate-0 w-full h-20 bg-bodyColor rounded-3xl overflow-hidden md:flex justify-center items-center cursor-pointer " >  
           
           <div className="   flex flex-col gap-1.5 justify-center items-center group overflow-hidden ">
             <span className=" w-8 h-[2px] bg-titleColor inline-block -translate-x-2 group-hover:translate-x-0 transition-transform duration-300 group-hover:bg-designColor "></span>
@@ -50,10 +50,10 @@ const Home = () => {
 
         </div>
         {/* other Icons */}
-        <div className="  w-full h-80 bg-bodyColor rounded-3xl py-5 flex flex-col justify-between items-center ">
-          <span className=" flex hover:text-designColor duration-300 cursor-pointer relative group" onClick={() => handleNavItemClicked('/' , 'about')} ><BsFillPersonFill  className=' text-2xl rounded-lg '/> <span className=' w-auto  absolute text-black font-medium text-xs uppercase bg-designColor  p-0.5 py-1 rounded-lg left-0 translate-x-8 group-hover:translate-x-12 transition-all duration-300 z-20 opacity-0 group-hover:opacity-100 ' >About</span> </span>
-          <span className=" flex hover:text-designColor duration-300 cursor-pointer relative group"  onClick={() => handleNavItemClicked('/resume' , 'resume')} ><AiOutlineSolution   className=' text-2xl rounded-lg '/> <span className=' w-auto   absolute text-black font-medium text-xs uppercase bg-designColor  p-0.5 py-1 rounded-lg left-0 translate-x-8 group-hover:translate-x-12 transition-all duration-300 z-20 opacity-0 group-hover:opacity-100 ' >CV</span> </span>
-          <span className=" flex hover:text-designColor duration-300 cursor-pointer relative group" onClick={() => handleNavItemClicked('/project','project')} ><SiMicrosoftacademic  className=' text-2xl rounded-lg '/> <span className='   w-auto absolute text-black font-medium text-xs uppercase bg-designColor  p-0.5 py-1 rounded-lg left-0 translate-x-8 group-hover:translate-x-12 transition-all duration-300 z-20 opacity-0 group-hover:opacity-100 ' >Project</span> </span>
+        <div className="   w-full h-80 bg-bodyColor rounded-3xl py-5 flex flex-col justify-between items-center ">
+          <span className=" flex hover:text-designColor duration-300 cursor-pointer relative group" onClick={() => handleNavItemClicked('/' , 'about')} ><BsFillPersonFill  className=' text-2xl rounded-lg '/> <span className=' w-auto  absolute text-black font-medium text-xs uppercase bg-designColor  p-0.5 py-1 rounded-lg left-0 translate-x-8 group-hover:translate-x-12 transition-all duration-300 z-20 md:opacity-0 md:group-hover:opacity-100 ' >About</span> </span>
+          <span className=" flex hover:text-designColor duration-300 cursor-pointer relative group"  onClick={() => handleNavItemClicked('/resume' , 'resume')} ><AiOutlineSolution   className=' text-2xl rounded-lg '/> <span className=' w-auto   absolute text-black font-medium text-xs uppercase bg-designColor  p-0.5 py-1 rounded-lg left-0 translate-x-8 group-hover:translate-x-12 transition-all duration-300 z-20 md:opacity-0 group-hover:opacity-100 ' >CV</span> </span>
+          <span className=" flex hover:text-designColor duration-300 cursor-pointer relative group" onClick={() => handleNavItemClicked('/project','project')} ><SiMicrosoftacademic  className=' text-2xl rounded-lg '/> <span className='   w-auto absolute text-black font-medium text-xs uppercase bg-designColor  p-0.5 py-1 rounded-lg left-0 translate-x-8 group-hover:translate-x-12 transition-all duration-300 z-20 md:opacity-0 group-hover:opacity-100 ' >Project</span> </span>
           
         </div>
         

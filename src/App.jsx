@@ -10,12 +10,12 @@ function App() {
 
   return (
     <>
-      <div className="md:w-full md:h-screen font-bodyfont text-textColor bg-black relative md:overflow-hidden">
+      <div className=" md:w-full md:h-screen font-bodyfont text-textColor bg-black relative md:overflow-hidden">
         
-        <div className="  max-w-screen-2xl h-full mx-auto flex justify-center items-center"> 
+        <div className="  md:max-w-screen-2xl h-full mx-auto flex justify-center items-center"> 
         <Home></Home>
         </div>
-        <div className ="w-full h-full absolute top-0 left-0 z-10 "  >
+        <div className =" md:w-full md:h-full absolute top-0 left-0 z-10 "  >
 
           <RoundOne></RoundOne>
           <RoundTwo></RoundTwo>

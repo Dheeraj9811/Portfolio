@@ -16,10 +16,10 @@ const texts = ["I am a developer", "Passionate about coding", "Building awesome 
 const left = () => {
   return (
     <div className="  md:w-5/12 md:h-full ">
-        <div className=" w-full h-3/5 place-items-center bg-bodyColor overflow-hidden rounded-3xl">
+        <div className=" md:w-full md:h-3/5 place-items-center bg-bodyColor overflow-hidden  rounded-3xl">
             <img src={ProfilePic} alt="profile pic" className="w-full h-full scale-125   rounded-3xl shadow-lg border-2 border-gray-700"></img>
         </div>
-        <div className=" overflow-auto relative w-full h-2/5 bg-bodyColor rounded-3xl">
+        <div className=" relative w-full h-2/5 bg-bodyColor rounded-3xl">
             {/* contians intro */}
             <div className="    w-full h-4/5 flex flex-col items-center gap-2 py-6 overflow-auto ">
                 <div className=" items-start ">

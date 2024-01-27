@@ -11,11 +11,10 @@ const right = ({activeComponent }) => {
     <div className=" md:w-8/12 md:h-[95%] bg-bodyColor overflow-y-auto " id="rightside">
       <Routes>
         {/* <Route path='/resume' element={<Resume/>}></Route> */}
-        <Route path='/' element={<motion.div initial={{ opacity:0 }} animate={{ opacity:1 }} transition={{duration:0.5}} ><About/></motion.div>  }>
+        <Route path='/' element= {<About/>} ></Route>
+        <Route path='/resume' element={<Resume/>}>
         </Route>
-        <Route path='/resume' element={<motion.div initial={{ opacity:0 }} animate={{ opacity:1 }} transition={{duration:0.5}} ><Resume/></motion.div>  }>
-        </Route>
-        <Route path='/project' element={<motion.div initial={{ opacity:0 }} animate={{ opacity:1 }} transition={{duration:0.5}} ><Project/></motion.div>  }>
+        <Route path='/project' element={<Project/>  }>
         </Route>
 
       </Routes>

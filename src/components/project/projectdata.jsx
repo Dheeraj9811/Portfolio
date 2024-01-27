@@ -3,7 +3,7 @@ import React from 'react'
 const projectdata = [
     {
         id:1,
-        title:"FreshFolds(website)",
+        title:"FreshFolds (website)",
         discribtion:"An E-commerce website with full functionality of cart and payment gateway.",
         link:"https://project-freshfolds.netlify.app/"
     },
@@ -15,7 +15,7 @@ const projectdata = [
     },
     {
         id:3,
-        title: "EcomHarborDB",
+        title: "EcomHarbor DB",
         discribtion: "Designed Database Management System for an e-commerce platform.",
         link: "https://github.com/Dheeraj9811/Online-Retail-Store/tree/main"
     },
