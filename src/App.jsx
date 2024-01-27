@@ -10,7 +10,7 @@ function App() {
 
   return (
     <>
-      <div className=" md:w-full md:h-screen font-bodyfont text-textColor bg-black relative md:overflow-hidden">
+      <div className="  md:w-full md:h-screen font-bodyfont text-textColor bg-black relative md:overflow-hidden overflow-clip border ">
         
         <div className="  md:max-w-screen-2xl h-full mx-auto flex justify-center items-center"> 
         <Home></Home>
