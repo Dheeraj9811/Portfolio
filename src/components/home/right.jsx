@@ -2,7 +2,6 @@ import React, { useEffect } from 'react';
 import About from '../about/about'
 import Resume from '../resume/resume'
 import {Routes, Route} from 'react-router-dom'
-import { motion } from "framer-motion"
 import Project from '../project/project';
 
 

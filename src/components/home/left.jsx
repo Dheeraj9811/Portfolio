@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react';
 import ProfilePic from '../../assets/profile_dp.jpeg'
 import { FaGithub } from "react-icons/fa";
 import { BiLogoGmail } from "react-icons/bi";
@@ -13,12 +13,41 @@ import { MdContacts } from "react-icons/md";
 
 
 const texts = ["I am a developer", "Passionate about coding", "Building awesome websites"];
-const left = () => {
+const left = ({activeComponent}) => {
+    const [showPic, setShowPic] = useState(true);
+
+  useEffect(() => {
+    const handleResize = () => {
+        
+      if (window.innerWidth < 768 && activeComponent !== 'about') {
+        setShowPic(false);
+      } else {
+        setShowPic(true);
+      }
+    };
+
+    // Initial check on component mount
+    handleResize();
+
+    // Add event listener for window resize
+    window.addEventListener('resize', handleResize);
+
+    // Remove event listener on component unmount
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, [activeComponent]);
   return (
-    <div className="  md:w-5/12 md:h-full ">
-        <div className=" md:w-full md:h-3/5 place-items-center bg-bodyColor overflow-hidden  rounded-3xl">
-            <img src={ProfilePic} alt="profile pic" className="w-full h-full scale-125   rounded-3xl shadow-lg border-2 border-gray-700"></img>
-        </div>
+    <div className="pic md:w-5/12 md:h-full">
+    {showPic && (
+      <div className="md:w-full md:h-3/5 place-items-center bg-bodyColor overflow-hidden rounded-3xl">
+        <img
+          src={ProfilePic}
+          alt="profile pic"
+          className="w-full h-full scale-125 rounded-3xl shadow-lg border-2 border-gray-700"
+        />
+      </div>
+            )}
         <div className=" relative w-full h-2/5 bg-bodyColor rounded-3xl">
             {/* contians intro */}
             <div className="    w-full h-4/5 flex flex-col items-center gap-2 py-6 overflow-auto ">

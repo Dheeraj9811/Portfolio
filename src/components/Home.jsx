@@ -6,6 +6,7 @@ import { Routes, Route, Link, useNavigate } from 'react-router-dom';
 import { BsFillPersonFill } from "react-icons/bs";
 import { SiMicrosoftacademic } from "react-icons/si";
 import { AiOutlineSolution } from "react-icons/ai";
+import { motion } from "framer-motion"
 
 
 
@@ -60,7 +61,8 @@ const Home = () => {
       </div>
       <div className=' md:w-11/12 md:h-full  bg-transparent md:flex items-center'>  {/* main body wich contains left and right parts */}
         {/* left part */}
-        <Left></Left>
+        
+        <Left  activeComponent={activeComponent}></Left>
         {/* right part */}
         <Right activeComponent={activeComponent} />
           
