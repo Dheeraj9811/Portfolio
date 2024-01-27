@@ -48,7 +48,7 @@ const left = ({activeComponent}) => {
         />
       </div>
             )}
-        <div className=" relative w-full h-2/5 bg-bodyColor rounded-3xl">
+        <div className=" mb-4 md:mb-0 relative w-full h-2/5 bg-bodyColor rounded-3xl">
             {/* contians intro */}
             <div className="    w-full h-4/5 flex flex-col items-center gap-2 py-6 overflow-auto ">
                 <div className=" items-start ">

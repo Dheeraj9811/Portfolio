@@ -39,7 +39,7 @@ const Home = () => {
   return (
     <div className="  w-[85%] md:w-[75%] md:h-[80%] bg-transparent text-white md:rounded-lg z-50 md:flex md:flex-row  ">
       {/* nav bar */}
-      <div className=" navbar  md:rotate-0 md:w-16 md:h-96 bg-transparent rounded-lg md:flex md:flex-col md:gap-3 px-1 md:-ml-2 mr-1 ">
+      <div className=" m-2 navbar  md:rotate-0 md:w-16 md:h-96 bg-transparent rounded-lg md:flex md:flex-col md:gap-3 px-1 md:-ml-2 md:mr-1 ">
         {/* home Icons */}
         <div className="  hidden md:visible md:rotate-0 w-full h-20 bg-bodyColor rounded-3xl overflow-hidden md:flex justify-center items-center cursor-pointer " >  
           

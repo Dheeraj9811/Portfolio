@@ -7,7 +7,7 @@ import Project from '../project/project';
 
 const right = ({activeComponent }) => {
   return (
-    <div className=" md:w-8/12 md:h-[95%] bg-bodyColor overflow-y-auto " id="rightside">
+    <div className=" rounded-xl md:rounded-none md:w-8/12 md:h-[95%] bg-bodyColor overflow-y-auto " id="rightside">
       <Routes>
         {/* <Route path='/resume' element={<Resume/>}></Route> */}
         <Route path='/' element= {<About/>} ></Route>
