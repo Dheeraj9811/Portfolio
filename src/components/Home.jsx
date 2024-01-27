@@ -36,9 +36,9 @@ const Home = () => {
   //   setActiveComponent(newlocation);
   // };
   return (
-    <div className="  w-[75%] h-[80%] bg-transparent text-white rounded-lg z-50 md:flex md:flex-row  ">
+    <div className="  w-[85%] md:w-[75%] md:h-[80%] bg-transparent text-white md:rounded-lg z-50 md:flex md:flex-row  ">
       {/* nav bar */}
-      <div className=" navbar  md:rotate-0 md:w-16 md:h-96 bg-transparent rounded-lg md:flex md:flex-col gap-3 px-1 -ml-2 mr-1 ">
+      <div className=" navbar  md:rotate-0 md:w-16 md:h-96 bg-transparent rounded-lg md:flex md:flex-col md:gap-3 px-1 md:-ml-2 mr-1 ">
         {/* home Icons */}
         <div className="  hidden md:visible md:rotate-0 w-full h-20 bg-bodyColor rounded-3xl overflow-hidden md:flex justify-center items-center cursor-pointer " >  
           
@@ -50,7 +50,7 @@ const Home = () => {
 
         </div>
         {/* other Icons */}
-        <div className="   w-full h-80 bg-bodyColor rounded-3xl py-5 flex flex-col justify-between items-center ">
+        <div className="   flex-row justify-evenly h-16 px-0 mx-0  md:w-full md:h-80 bg-bodyColor rounded-3xl md:py-5 flex md:flex-col md:justify-between items-center ">
           <span className=" flex hover:text-designColor duration-300 cursor-pointer relative group" onClick={() => handleNavItemClicked('/' , 'about')} ><BsFillPersonFill  className=' text-2xl rounded-lg '/> <span className=' w-auto  absolute text-black font-medium text-xs uppercase bg-designColor  p-0.5 py-1 rounded-lg left-0 translate-x-8 group-hover:translate-x-12 transition-all duration-300 z-20 md:opacity-0 md:group-hover:opacity-100 ' >About</span> </span>
           <span className=" flex hover:text-designColor duration-300 cursor-pointer relative group"  onClick={() => handleNavItemClicked('/resume' , 'resume')} ><AiOutlineSolution   className=' text-2xl rounded-lg '/> <span className=' w-auto   absolute text-black font-medium text-xs uppercase bg-designColor  p-0.5 py-1 rounded-lg left-0 translate-x-8 group-hover:translate-x-12 transition-all duration-300 z-20 md:opacity-0 group-hover:opacity-100 ' >CV</span> </span>
           <span className=" flex hover:text-designColor duration-300 cursor-pointer relative group" onClick={() => handleNavItemClicked('/project','project')} ><SiMicrosoftacademic  className=' text-2xl rounded-lg '/> <span className='   w-auto absolute text-black font-medium text-xs uppercase bg-designColor  p-0.5 py-1 rounded-lg left-0 translate-x-8 group-hover:translate-x-12 transition-all duration-300 z-20 md:opacity-0 group-hover:opacity-100 ' >Project</span> </span>
