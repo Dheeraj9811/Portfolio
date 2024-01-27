@@ -20,7 +20,7 @@ To run the project locally, follow these steps:
     ```
 
 ## Features
-
+- **Responsive for every device size **
 - **User-Friendly Content Management:** Effortlessly update your content with a highly user-friendly approach. Utilize separate data files, such as `skilldata.jsx`, for easy content management without the need to dive into the core codebase.
 
 - **Modular Organization:** Enjoy a well-organized structure with modular files, making it a breeze to locate and update specific sections. This modular approach enhances maintainability and simplifies the process of adding or modifying content.
@@ -28,8 +28,6 @@ To run the project locally, follow these steps:
 - **React's Dynamic Rendering:** Leverage React's capabilities for dynamic content rendering. Components are designed to dynamically display content from separate data files, providing flexibility and ease of customization.
 
 ## Work to Be Completed
-
-- **Add Contact Section:** Enhance user engagement by adding a dedicated contact section.
 
 - **Implement User-Friendly Editing Profile Page:** Create an intuitive and user-friendly editing experience for updating the profile page.
 
