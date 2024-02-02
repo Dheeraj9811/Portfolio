@@ -28,7 +28,7 @@ const servicedata =[
         id:4,
         title:"Api Development",
         icon:<CgController />,
-        description:"Coming soon."
+        description:"Build and deploy APIs using Python to enable seamless communication between the frontend and backend of web applications."
     }
 
 

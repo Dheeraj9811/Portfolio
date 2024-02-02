@@ -14,7 +14,7 @@ const aboutMe = () => {
             <li className=" aboutRightLi "><span className=' aboutRightSpan'>Age:</span>23</li>
             <li className=" aboutRightLi "><span className=' aboutRightSpan'>College:</span>IIIT-D</li>
             <li className=" aboutRightLi "><span className=' aboutRightSpan'>Batch:</span>2020-2024</li>
-            <li className=" aboutRightLi "><span className=' aboutRightSpan'>Contry:</span>India</li>
+            <li className=" aboutRightLi "><span className=' aboutRightSpan'>Country:</span>India</li>
             <li className=" aboutRightLi "><span className=' aboutRightSpan'>Address:</span>India, Delhi</li>
 
           </ul>
