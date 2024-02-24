@@ -51,15 +51,15 @@ const Home = () => {
 
         </div>
         {/* other Icons */}
-        <div className="   flex-row justify-evenly h-16 px-0 mx-0  md:w-full md:h-80 bg-bodyColor rounded-3xl md:py-5 flex md:flex-col md:justify-between items-center ">
-          <span className=" flex hover:text-designColor duration-300 cursor-pointer relative group" onClick={() => handleNavItemClicked('/' , 'about')} ><BsFillPersonFill  className=' text-2xl rounded-lg '/> <span className=' w-auto  absolute text-black font-medium text-xs uppercase bg-designColor  p-0.5 py-1 rounded-lg left-0 translate-x-8 group-hover:translate-x-12 transition-all duration-300 z-20 md:opacity-0 md:group-hover:opacity-100 ' >About</span> </span>
-          <span className=" flex hover:text-designColor duration-300 cursor-pointer relative group"  onClick={() => handleNavItemClicked('/resume' , 'resume')} ><AiOutlineSolution   className=' text-2xl rounded-lg '/> <span className=' w-auto   absolute text-black font-medium text-xs uppercase bg-designColor  p-0.5 py-1 rounded-lg left-0 translate-x-8 group-hover:translate-x-12 transition-all duration-300 z-20 md:opacity-0 group-hover:opacity-100 ' >CV</span> </span>
-          <span className=" flex hover:text-designColor duration-300 cursor-pointer relative group" onClick={() => handleNavItemClicked('/project','project')} ><SiMicrosoftacademic  className=' text-2xl rounded-lg '/> <span className='   w-auto absolute text-black font-medium text-xs uppercase bg-designColor  p-0.5 py-1 rounded-lg left-0 translate-x-8 group-hover:translate-x-12 transition-all duration-300 z-20 md:opacity-0 group-hover:opacity-100 ' >Project</span> </span>
+        <div className="   flex-row justify-evenly h-16 px-0 mx-0  md:w-full md:h-80 bg-bodyColor rounded-3xl md:py-5 flex md:flex-col md:justify-between items-center z-20 ">
+          <span className=" flex hover:text-designColor duration-300 cursor-pointer relative group z-20" onClick={() => handleNavItemClicked('/' , 'about')} ><BsFillPersonFill  className=' text-2xl rounded-lg z-20 '/> <span className=' w-auto  absolute text-black font-medium text-xs uppercase bg-designColor  p-0.5 py-1 rounded-lg md:left-0  md:-bottom-10 md:translate-x-8 group-hover:-translate-x-2 transition-all duration-300 z-20 opacity-0 group-hover:opacity-100  ' >About</span> </span>
+          <span className=" flex hover:text-designColor duration-300 cursor-pointer relative group"  onClick={() => handleNavItemClicked('/resume' , 'resume')} ><AiOutlineSolution   className=' text-2xl rounded-lg '/> <span className=' w-auto   absolute text-black font-medium text-xs uppercase bg-designColor  p-0.5 py-1 rounded-lg md:left-0 md:-bottom-10 md:translate-x-8 group-hover:-translate-x-0 transition-all duration-300 z-20 opacity-0 group-hover:opacity-100 ' >CV  </span> </span>
+          <span className=" flex hover:text-designColor duration-300 cursor-pointer relative group" onClick={() => handleNavItemClicked('/project','project')} ><SiMicrosoftacademic  className=' text-2xl rounded-lg '/> <span className='   w-auto absolute text-black font-medium text-xs uppercase bg-designColor  p-0.5 py-1 rounded-lg md:left-0  md:bottom-10 md:translate-x-8 group-hover:-translate-x-2 transition-all duration-300 z-20 opacity-0 group-hover:opacity-100 ' >Project</span> </span>
           
         </div>
         
       </div>
-      <div className=' md:w-11/12 md:h-full  bg-transparent md:flex items-center'>  {/* main body wich contains left and right parts */}
+      <div className=' md:w-11/12 md:h-full  bg-transparent md:flex items-center z-0 '  >  {/* main body wich contains left and right parts */}
         {/* left part */}
         
         <Left  activeComponent={activeComponent}></Left>

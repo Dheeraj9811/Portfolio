@@ -9,34 +9,55 @@ import { motion } from "framer-motion"
 
 
 
-const ProjectCard = ({title ="project", image = projectbg2, link="NA"} ) => {
-    //  we can also use props.title, props.image, props.link
-    return(
-        <a href={link} target="_blank" rel="noopener noreferrer" className="block">
-      <div className="py-6 md:flex md:flex-col gap-2 items-center justify-center border-b-[1px] border-b-zinc-800 group">
+const ProjectCard = ({ number, title = "project", image = projectbg2, link = "NA", description = "NA" }) => {
+  const show = () => {
+    const titleElement = document.getElementById(number+"title");
+    const descriptionElement = document.getElementById(number+"dis");
+    if (titleElement && descriptionElement) {
+      titleElement.classList.add("hidden");
+      descriptionElement.classList.remove("hidden");
+    }
+  };
+
+  const hide = () => {
+    const titleElement = document.getElementById(number+"title");
+    const descriptionElement = document.getElementById(number+"dis");
+    if (titleElement && descriptionElement) {
+      titleElement.classList.remove("hidden");
+      descriptionElement.classList.add("hidden");
+    }
+  };
+
+  return (
+    <a href={link} target="_blank" rel="noopener noreferrer" className="block">
+      <div className="py-6 md:flex md:flex-col gap-2 items-center justify-center border-b-[1px] border-b-zinc-800 group" onMouseEnter={show} onMouseLeave={hide}>
         <div className="w-full h-full mb-2  relative cursor-pointer">
           <img
             className="w-full h-full object-cover scale-100 group-hover:scale-110 duration-300 cursor-pointer"
             src={image}
             alt="blogImgOne"
           />
-            <div className="absolute   bg-black bg-opacity-50 transition-all duration-300 ease-in-out opacity-0 group-hover:opacity-100 cursor-pointer overflow-auto "></div>
+          <div className="absolute   bg-black bg-opacity-50 transition-all duration-300 ease-in-out opacity-0 group-hover:opacity-100 cursor-pointer overflow-auto "></div>
           <div className="  absolute  border inset-5 flex flex-col items-center justify-center">
-            <span className="text-lg  p-10 text-teal-950 font-semibold overflow-auto ">
+            <span className="text-lg  p-10 text-teal-950 font-semibold overflow-auto  group-hover:hidden " id={number+"title"}>
               {title}
+            </span>
+            <span className="text-lg  p-10 text-teal-950 font-semibold overflow-auto hidden" id={number+"dis"}>
+              {description}
             </span>
           </div>
         </div>
-        
       </div>
     </a>
-    )
+  );
 };
+
 
 ProjectCard.propTypes ={
     title: PropTypes.string,
     image: PropTypes.string,
     link: PropTypes.string,
+    description: PropTypes.string,
 };
 
 const project = () => {    
@@ -49,9 +70,11 @@ const project = () => {
               return (
                 <div className='   px-6 'key={item.id}>
                 <ProjectCard
+                  number={item.id}
                   title={item.title}
                   image={projectbg2}
                   link={item.link}
+                  description={item.discribtion}
                 />
                 </div>
               );

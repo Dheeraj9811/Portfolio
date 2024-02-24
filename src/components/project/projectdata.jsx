@@ -2,6 +2,12 @@ import React from 'react'
 
 const projectdata = [
     {
+        id:0,
+        title:"Contact Management App-Backend",
+        discribtion:"It's a backend solution for managing and organizing contact information. This project provides a robust server-side implementation with API endpoints for user registration, authentication, and contact management. It aims to offer a scalable and customizable solution for applications requiring contact-related functionalities",
+        link:"https://github.com/Dheeraj9811/Contact-Management-App"
+    },
+    {
         id:1,
         title:"FreshFolds (website)",
         discribtion:"An E-commerce website with full functionality of cart and payment gateway.",
