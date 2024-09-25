@@ -55,7 +55,7 @@ const left = ({activeComponent}) => {
                     <h1 className=" text-2xl  font-semibold  ">Hi there, I am Dheeraj 👋</h1>
                     <div className="py-4 text-base text-wrap text-designColor  ">
                     <TypeAnimation
-                        sequence={['⚡AI Model Developer | Web Enthusiast', 300, '🌟Making things happen!', 500, '🎓Final Year Student at IIITD', 500]}
+                        sequence={['⚡AI Model Developer | Web Enthusiast', 300, '🌟Making things happen!', 500, '🎓Graduated From IIITD', 500]}
                         // style={{ fontSize: '2em' }}
                         repeat={Infinity}
                     />

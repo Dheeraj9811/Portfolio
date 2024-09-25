@@ -16,6 +16,24 @@ const Education = () => {
       {/* Experince details*/}
       <div className='flex flex-col gap-3 pb-6 border-b-[1px]  border-zinc-800 group hover:text-designColor transition-all duration-500 ease-in-out  '>
         <h4 className=' w-[30%] border border-gray-500 px-4 py-[1px]  text-gray-500 text-sm  '>2023 Jul-2023 Dec</h4>
+        <h4 className='uppercase text-lg flex flex-col gap-2' > Software Engineer
+          <h5 className=" text-gray-500 text-sm  ">at Arapl Raas</h5>
+        </h4>
+        
+        <span className='  hidden transition-all duration-500  group-hover:shadow-2xl  group-hover:ease-in-out group-hover:duration-500  group-hover:block' >
+        <ul className='list-disc text-gray-500 text-sm text-pretty  '>
+            <li> Perception Systems: Engineered advanced perception modules for autonomous robotics and automation, 
+              including pallet detection for warehouse management and safety zone monitoring for robot-human interaction, using YOLOv for real-time object detection.</li>
+            <li>Model Development and Optimization: Developed and optimised deep learning models using Python, C++, 
+              and TensorRT, achieving high-speed inference for tasks such as obstacle detection and safety compliance, ensuring robots respond instantly to dynamic environments</li>
+              <li>Autonomous Robotics: Integrated perception models for real-time navigation and safety, enabling the robots to operate efficiently in complex environments while avoiding hazards and maintaining safe distances from objects. Implemented a diagnostic module for real-time error handling, improving system reliability. </li>
+              <li>Docker Containerization: Streamlined workflows and ensured seamless integration by establishing consistent development environments using Docker.</li>
+          </ul>
+        </span>
+      </div>
+
+      <div className='flex flex-col gap-3 pb-6 border-b-[1px]  border-zinc-800 group hover:text-designColor transition-all duration-500 ease-in-out  '>
+        <h4 className=' w-[30%] border border-gray-500 px-4 py-[1px]  text-gray-500 text-sm  '>2023 Jul-2023 Dec</h4>
         <h4 className='uppercase text-lg flex flex-col gap-2' >AI product development and Research
           <h5 className=" text-gray-500 text-sm  ">Part-time at ASADEL TECHNOLOGIES</h5>
         </h4>
