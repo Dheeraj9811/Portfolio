@@ -13,7 +13,7 @@ const servicedata =[
 
     {   
         id:2,
-        title:"Robotic / ROS",
+        title:"Robotics / Perception / ROS",
         icon:<CgController />,
         description:"Perception Systems: Engineered advanced perception modules for autonomous robotics and automation, including pallet detection for warehouse management and safety zone monitoring for robot-human interaction, using YOLOv for real-time object detection."
     },
